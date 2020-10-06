@@ -9,7 +9,12 @@ module.exports = {
     index : function(req,res){
         res.render(path.resolve(__dirname, '..', 'views','web','index'))
 
-    }
+    },
+    home : function(req,res){
+        res.render(path.resolve(__dirname, '..', 'views','web','home'))
+
+    },
+
 
 
 

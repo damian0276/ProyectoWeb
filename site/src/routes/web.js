@@ -10,6 +10,7 @@ const controllerWeb = require(path.resolve(__dirname,"..","controllers","control
 //armo la ruta
 
 router.get('/',controllerWeb.index);
+router.get('/home',controllerWeb.home);
 
 
 
