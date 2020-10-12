@@ -8,4 +8,11 @@ const path = require("path");
 const controllerProducts = require(path.resolve(__dirname,"..","controllers","controllerProducts"));
 
 
-router.get('/products', controllerProduct.index);
+router.get('/productos', controllerProducts.index);
+
+
+
+
+
+
+module.exports = router;
