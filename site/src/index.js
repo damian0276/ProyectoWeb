@@ -10,13 +10,15 @@ app.set('view engine', 'ejs');
 
 //Uso  a las rutas
 
-const webRoutes = require('./routes/web.js')
+const webRoutes = require('./routes/web.js');
+const productRoutes = require('./routes/products.js')
 
 
 
 //llamo a las rutas
 
 app.use(webRoutes);
+app.use(productRoutes);
 
 
 
