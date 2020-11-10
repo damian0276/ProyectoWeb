@@ -10,11 +10,13 @@ module.exports = {
         res.render(path.resolve(__dirname, '..', 'views','web','index'))
 
     },
-    home : function(req,res){
-        res.render(path.resolve(__dirname, '..', 'views','web','home'))
+    contacto : function(req,res){
+        res.render(path.resolve(__dirname, '..', 'views','web','contacto'))
 
     },
-
+    nosotros: function(req,res){
+        res.render(path.resolve(__dirname,'..','views','web','nosotros'))
+    }
 
 
 

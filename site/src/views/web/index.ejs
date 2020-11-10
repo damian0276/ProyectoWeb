@@ -4,17 +4,22 @@
 <body>
   <%- include('../partials/header') %> 
 
-  <section>
-    <div class="banner">
-     
-    </div>
-  </section>
+ 
   <section class="container" id="cont">
+    <div class="video">
+      <video width="970" poster="video.jpg" autoplay loop controls>
+        <source src="/asset/video/production.mp4"  type="video/mp4">
+        
+        <p>Tu navegador no soporta video html5<p>
+        </video>
+        
+    </div>
     <div class="card" style="width: 18rem;">
       <img src="/asset/productos/didactico1.jpg" class="card-img-top" alt="...">
       <div class="card-body">
         <h5 class="card-title">Figuras Geometricas</h5>
         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        
         <a href="#" class="btn btn-primary">Ver más</a>
       </div>
     </div>
@@ -23,7 +28,7 @@
       <div class="card-body">
         <h5 class="card-title">Cubos</h5>
         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-        <a href="#" class="btn btn-primary">Ver más</a>
+        <a href="../product/productos.ejs" class="btn btn-primary">Ver más</a>
       </div>
     </div>
     <div class="card" style="width: 18rem;">
@@ -36,6 +41,10 @@
     </div>
     
   </section>
+  <a href="https://api.whatsapp.com/send?phone=+541130483603" class="btn-wsp" target="_blank">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+</body>
   
   
   <%- include('../partials/script') %> 
