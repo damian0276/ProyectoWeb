@@ -3,5 +3,45 @@
     <%- include('../partials/head') %>  
 <body>
     <%- include('../partials/header') %> 
+    <main class="container-fluid">    
+        <section>
+            <article>
+                <h2 class="display-4  text-center cartel titulo-adminProduct ">Administrador de Productos</h2>
+            </article>
+            <div>
+                <table class="table">
+                    <thead>
+                      <tr>
+                        <th scope="col">Id</th>
+                        <th scope="col">Marca</th>
+                        <th scope="col">Modelo</th>
+                        <th scope="col">Ver</th>
+                        <th scope="col">Editar</th>
+                        <th scope="col">Borrar</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                       
+                        <tr>  
+                          <td>01</td>
+                          <td>MD</td>  
+                          <td>Piezas de encastre</td>                                         
+                          <td><a class="btn-table" href="#"> <i class="far fa-eye btn-table"></i></a></td>
+                          <td><a class="btn-table" href="#"> <i class="fas fa-pencil-alt"></i></a></td>
+                          <td>
+                            <form action="" method="post">       
+                              <button class="btn-table" type="submit"><i class="fas fa-trash-alt"></i></button>             
+                            </form>
+                          </td>
+                        </tr> 
+                                                             
+                      </tbody>
+            </div>
+           <div class="container ">
+                             
+           </div>
+        </section>                           
+         
+    </main>      
 </body>
 </html>
