@@ -9,7 +9,7 @@ const controllerProducts = require(path.resolve(__dirname,"..","controllers","co
 
 
 router.get('/productos', controllerProducts.index);
-
+router.get('/productDetail/:id?',controllerProducts.detail);
 
 
 

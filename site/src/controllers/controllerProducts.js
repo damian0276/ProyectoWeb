@@ -7,11 +7,10 @@ module.exports = {
     index: function(req,res){
         res.render(path.resolve(__dirname, '..', 'views','product','productos',))
 
-    }
-
-
-
-
+    },
+    detail : function(req,res){
+        res.render(path.resolve(__dirname, '..', 'views','product','productDetail',))
+    },
 
 
 }
