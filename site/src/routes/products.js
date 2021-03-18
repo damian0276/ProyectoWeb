@@ -5,11 +5,11 @@ const path = require("path");
 
 // Requiero el dontrolador
 
-const controllerProducts = require(path.resolve(__dirname,"..","controllers","controllerProducts"));
+const controllerProduct = require(path.resolve(__dirname, '..', 'controllers', 'controllerProduct'));
 
 
-router.get('/productos', controllerProducts.index);
-router.get('/productDetail/:id?',controllerProducts.detail);
+router.get('/productos', controllerProduct.productosIndex);
+
 
 
 
