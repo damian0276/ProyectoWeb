@@ -7,12 +7,13 @@ const bodyParser = require('body-parser');
 mongoose.Promise = global.Promise;
 
 //Aca conecto la base de datos mongodb
-mongoose.connect('mongodb://localhost/dmDidacticos', {useMongoClient:true}).then(()=> console.log('db is conected')).catch(err=>console.log(err));
+mongoose.connect('mongodb://localhost/dmDidacticos',{useUnifiedTopology: true, useNewUrlParser: true }).then(()=> console.log('db is conected')).catch(err=>console.log(err));
 
 
 //settings//
 //Para indicarle express la carpeta donde se encuentran los archivos estáticos
 app.use(express.static(path.resolve(__dirname, '..', 'public')));
+app.set('views',path.join(__dirname,'views'));
 
 app.set('view engine', 'ejs');
 

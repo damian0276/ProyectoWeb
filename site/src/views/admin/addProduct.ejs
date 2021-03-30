@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<%- include('../partials/head') %> 
+<body>
+    <%- include('../partials/header') %> 
+    <div class="container ">
+        <div class="row p-4">
+            <div class="col-12 offset-md-6">
+                <div class=" addProduct">
+                    <div class="car">
+                        <h1 class="card-title">Agregar productos</h1>
+                        <form action="/addProduct" method="POST">
+                            <label for="category_name">Category Name</label>
+                            <input type="text" class="form-control" name="category_name" >
+                            <label for="product_name">Product name</label>
+                            <input type="text" class="form-control" name="product_name" >
+                            <label for="product_price">Price</label>
+                            <input type="text" class="form-control" name="product_price" ><br>
+                            <button type="submit" class="btnAdd ">Agregar</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+</body>
+</html>

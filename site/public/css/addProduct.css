@@ -1,0 +1,20 @@
+ .addProduct{
+    width: 500px;    
+}
+.car .card-title{
+    color:green;
+    font-family: 'Indie Flower', cursive;
+}
+.btnAdd{
+    background-color: orangered;
+    color: white;
+    border-radius: 30px;
+    border-color: white;
+    font-family: 'Indie Flower', cursive;
+
+
+}
+.btnAdd:hover{
+    background-color: green;
+   
+}
