@@ -11,10 +11,27 @@
     border-radius: 30px;
     border-color: white;
     font-family: 'Indie Flower', cursive;
+    width: 124px;
 
 
 }
 .btnAdd:hover{
     background-color: green;
    
+}.btnVol{
+    background-color: green;
+    color: white;
+    border-radius: 30px;
+    border-color: white;
+    font-family: 'Indie Flower', cursive;
+    width: 124px;
+    display:inline-block;
+    text-align: center;
+    text-decoration: none;
+
+}
+.btnVol:hover{
+    background-color: orangered;
+    text-decoration: none;
+    color: white;
 }
