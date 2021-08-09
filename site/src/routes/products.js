@@ -26,6 +26,7 @@ router.get('/generate-fake-data', (req,res)=>{
         product.name = faker.commerce.productName();
         product.price = faker.commerce.price();
         product.cover = faker.image.image();
+        product.description = faker.commerce.productdescription();
         product.save(err=>{
             if(err){return next(err);}
         });       
