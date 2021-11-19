@@ -14,25 +14,21 @@ const controllerProduct = require(path.resolve(__dirname, '..', 'controllers', '
 
 router.get('/productos', controllerProduct.productosIndex);
 
-
-router.get('/products/:page',controllerProduct.page)
-
-
-
 router.get('/generate-fake-data', (req,res)=>{
     for(let i = 0 ; i<10 ; i++){
         const product = new Product();
         product.category = faker.commerce.department();
-        product.name = faker.commerce.productName();
         product.price = faker.commerce.price();
         product.cover = faker.image.image();
         product.description = faker.commerce.productdescription();
+        product.name = faker.commerce.productName();
         product.save(err=>{
             if(err){return next(err);}
         });       
     }
     res.redirect('/addProduct');
-})
+});
+router.get('/productDetail', controllerProduct.detail);
 
 
 

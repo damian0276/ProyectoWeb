@@ -1,37 +1,33 @@
 <!DOCTYPE html>
-<%- include('../partials/head') %> 
+<%- include('../partials/head') %>
+
 <body>
-    <%- include ('../partials/header') %> 
-    <section class="tarjetaProductos">
-      <div class="card mb-3" style="max-width:600px;">
+  <%- include ('../partials/header') %>
+  <section class="container fluid tarjetaProductos">
+    <div class="row ">
+    <%products.forEach(product =>{%> 
+      <a href="./productDetail">
+      <div class="card mb-3" style="max-width:510px;">       
         <div class="row g-0">
+          
           <div class="col-md-4 mt-1 ml-1 ">
             <img src="/asset/productos/didactico1.jpg" class="img-fluid rounded-start" alt="didactico.">
           </div>
-          <div class="col-md-7">
+          <div class="col-md-7">           
             <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <h5 class="card-title"><%=product.name%> </h5>              
+              <p class="card-text"><%= product.description %> </p>
               <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
             </div>
           </div>
+        
         </div>
       </div>
-      <div class="card mb-3" style="max-width: 600px;">
-        <div class="row g-0">
-          <div class="col-md-4 mt-1 ml-1 ">
-            <img src="/asset/productos/foto2.jpg" class="img-fluid rounded-start" alt="didactico.">
-          </div>
-          <div class="col-md-7">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-          
+    </a>
+    <% }); %>
+  </div>
+  </section>
+
 </body>
+
 </html>
